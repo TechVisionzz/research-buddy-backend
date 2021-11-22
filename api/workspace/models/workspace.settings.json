@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workspaces",
+  "info": {
+    "name": "Workspace",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "user": {
+      "via": "workspaces",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "citations": {
+      "via": "workspaces",
+      "collection": "citation"
+    }
+  }
+}

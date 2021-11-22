@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contributors",
+  "info": {
+    "name": "Contributor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "initials": {
+      "type": "string"
+    },
+    "infix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "isorganization": {
+      "type": "boolean"
+    },
+    "citations": {
+      "via": "contributors",
+      "collection": "citation"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citations",
+  "info": {
+    "name": "Citation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "publicationdate": {
+      "type": "date"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "contributors": {
+      "via": "citations",
+      "collection": "contributor",
+      "dominant": true
+    },
+    "publishers": {
+      "via": "citations",
+      "collection": "publisher",
+      "dominant": true
+    },
+    "workspaces": {
+      "collection": "workspace",
+      "via": "citations",
+      "dominant": true
+    }
+  }
+}
