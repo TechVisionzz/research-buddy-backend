@@ -44,6 +44,99 @@
       "collection": "workspace",
       "via": "citations",
       "dominant": true
+    },
+    "year": {
+      "type": "string"
+    },
+    "codepages": {
+      "type": "integer"
+    },
+    "city": {
+      "type": "string"
+    },
+    "legislativeBody": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "richtext"
+    },
+    "pages": {
+      "type": "integer"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "editors": {
+      "type": "string"
+    },
+    "book": {
+      "type": "string"
+    },
+    "chapter": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "proctitle": {
+      "type": "string"
+    },
+    "encyclopedia": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "journal": {
+      "type": "string"
+    },
+    "issue": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "institution": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "assignee": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "statutenumber": {
+      "type": "integer"
+    },
+    "department": {
+      "type": "string"
+    },
+    "thesistype": {
+      "type": "string"
+    },
+    "typeofwork": {
+      "type": "string"
+    },
+    "series": {
+      "type": "string"
+    },
+    "distributor": {
+      "type": "string"
+    },
+    "publication": {
+      "type": "string"
     }
   }
 }
