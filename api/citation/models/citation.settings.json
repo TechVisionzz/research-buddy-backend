@@ -41,8 +41,8 @@
       "dominant": true
     },
     "workspaces": {
-      "collection": "workspace",
       "via": "citations",
+      "collection": "workspace",
       "dominant": true
     },
     "year": {
@@ -136,6 +136,29 @@
       "type": "string"
     },
     "publication": {
+      "type": "string"
+    },
+    "tags": {
+      "via": "citations",
+      "collection": "tag",
+      "dominant": true
+    },
+    "trash": {
+      "type": "boolean",
+      "default": false
+    },
+    "user": {
+      "via": "citations",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "fileId": {
+      "type": "string"
+    },
+    "iconUrl": {
+      "type": "string"
+    },
+    "downloadUrl": {
       "type": "string"
     }
   }

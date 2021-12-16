@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "workspaces",
+  "collectionName": "tags",
   "info": {
-    "name": "Workspace",
+    "name": "Tag",
     "description": ""
   },
   "options": {
@@ -15,24 +15,27 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
-    "parent": {
-      "type": "string"
-    },
-    "user": {
-      "via": "workspaces",
-      "plugin": "users-permissions",
-      "model": "user"
-    },
     "citations": {
-      "via": "workspaces",
+      "via": "tags",
       "collection": "citation"
+    },
+    "parentTag": {
+      "collection": "tag",
+      "via": "tags"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "parentTag",
+      "model": "tag"
     },
     "trash": {
       "type": "boolean",
       "default": false
+    },
+    "user": {
+      "via": "tags",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
