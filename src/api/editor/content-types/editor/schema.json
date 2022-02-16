@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editors",
+  "info": {
+    "singularName": "editor",
+    "pluralName": "editors",
+    "displayName": "editor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "references": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::reference.reference",
+      "inversedBy": "editors"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "singularName": "reference",
+    "pluralName": "references",
+    "displayName": "reference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "references"
+    },
+    "trash": {
+      "type": "boolean",
+      "default": false
+    },
+    "volume": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "distributor": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "publication": {
+      "type": "string"
+    },
+    "institution": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "issue": {
+      "type": "string"
+    },
+    "identifiers": {
+      "type": "string"
+    },
+    "referenceType": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "codePages": {
+      "type": "string"
+    },
+    "legislativeBody": {
+      "type": "string"
+    },
+    "book": {
+      "type": "string"
+    },
+    "chapter": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "procTitle": {
+      "type": "string"
+    },
+    "encyclopedia": {
+      "type": "string"
+    },
+    "journal": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "assignee": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "statuteNumber": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "typeOfwork": {
+      "type": "string"
+    },
+    "series": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "references"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author",
+      "mappedBy": "references"
+    },
+    "editors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::editor.editor",
+      "mappedBy": "references"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "references"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "collections"
+    },
+    "trash": {
+      "type": "boolean",
+      "default": false
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference",
+      "mappedBy": "collection"
+    }
+  }
+}
