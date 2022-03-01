@@ -18,9 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "parent": {
-      "type": "string"
-    },
     "owner": {
       "type": "relation",
       "relation": "manyToOne",
@@ -36,6 +33,18 @@
       "relation": "oneToMany",
       "target": "api::reference.reference",
       "mappedBy": "collection"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "collections"
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "parent"
     }
   }
 }
