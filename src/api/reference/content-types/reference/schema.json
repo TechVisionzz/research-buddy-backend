@@ -150,6 +150,9 @@
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "references"
+    },
+    "picture": {
+      "type": "string"
     }
   }
 }
